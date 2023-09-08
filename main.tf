@@ -15,8 +15,8 @@ module "s3_logs_bucket" {
     aws = aws.main
   }
 
-  source  = "cn-terraform/logs-s3-bucket/aws"
-  version = "1.0.6"
+  source = "github.com/dav3r/terraform-aws-logs-s3-bucket"
+  # version = "1.0.6"
   # source  = "../terraform-aws-logs-s3-bucket"
 
   name_prefix                   = "${var.name_prefix}-log-bucket"
